@@ -1,0 +1,103 @@
+.headerTop,.headerNav{
+    
+    /* border: 1px solid rgb(36, 35, 35); */
+    /* height: 100px; */
+    width: 100%;
+}
+
+#header{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.headerTop{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.headerStart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid gray; */
+
+}
+.headerStart> div> #logo{
+   width: 6rem;
+   /* margin-left: 0rem; */
+
+}
+
+#logo +h2{
+    font-size: 2rem;
+}
+
+.headerMid,.headerEnd{
+    display: flex;
+    /* border: 1px solid gray; */
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.imgLink img{
+   width: 2rem;
+   padding: 0 0.5rem;
+}
+
+.headerEnd >.sp{
+    padding: 0 0.5rem;
+    font-weight: 100;
+}
+.headerEndSp{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.headerEndSp >span{
+    padding:0 0.5rem 0 0;
+}
+
+.headerEnd >.sp >.Fb{
+    background-color: rgb(34, 34, 113);
+    color: #fff;
+    padding: 0.2rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.headerEnd >.sp >.Em{
+    background-color: rgba(41, 41, 44, 0.532);
+    color: #fff;
+    padding: 0.2rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+/* navigation  */
+
+.innerNav{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+.headerNav{
+    background-color: #2bb673;
+    padding: 0.3rem 0;
+}
+ .routeLink{
+    text-decoration: none;
+    color: #fff;
+}
