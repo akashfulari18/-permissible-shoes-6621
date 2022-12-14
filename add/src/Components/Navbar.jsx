@@ -3,31 +3,19 @@ import logo from "../logo.png";
 import "./Navbar.css";
 import {
   Box,
-  Flex,
-  Avatar,
-  HStack,
-  Link,
-  IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
   Image,
-  Text,
+  
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import { Link as RouterLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
+
   return (
     <>
-      <Box>
+      <Box className="bod">
         {" "}
         <div id="header">
           <div className="headerTop">
@@ -36,7 +24,7 @@ export default function Navbar() {
                 <Image id="logo" src={logo} />
               </div>
               <div>
-                <h2>HappyMeal.com</h2>
+                <h2>Happy<span className="tom">M</span>eal.com</h2>
               </div>
             </div>
             <div className="headerMid">
@@ -73,7 +61,8 @@ export default function Navbar() {
               </div>
               <div className="sp headerEndSp">
                 {" "}
-                <span>|</span> <p>Sign Up</p>
+                {/* <span>|</span> */}
+                 <p>Sign Up</p>
               </div>
             </div>
           </div>
