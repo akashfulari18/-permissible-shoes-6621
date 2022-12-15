@@ -1,0 +1,67 @@
+.CardParent {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  justify-content: center;
+}
+
+.cards {
+    width: 90%;
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.singleCard {
+  /* border: 1px solid red; */
+  /* height: 200px; */
+  width: 300px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+}
+.cardTop {
+  /* border: 1px solid rgb(137, 133, 133); */
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardTop img{
+width: 20%;
+height: 100%;
+/* border: 1px solid red; */
+border-radius: 50%;
+}
+/*   searchContainer*/
+
+.searchContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.vBtn{
+    background-color: #f53838;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.midImg{
+    width: 100%;
+    height: 200px;
+}
+.IconsBot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconDisp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
