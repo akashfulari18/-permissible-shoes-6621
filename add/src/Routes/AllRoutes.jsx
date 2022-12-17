@@ -5,9 +5,11 @@ import Directory from '../Pages/Directory'
 import Help from '../Pages/Help'
 import Home from '../Pages/Home'
 import KindMoments from '../Pages/KindMoments'
+import Login from '../Pages/Login'
 import MobileApp from '../Pages/MobileApp'
 import MyDeals from '../Pages/MyDeals'
 import Recipes from '../Pages/Recipes'
+import PrivateRoute from '../Pages/PrivateRoute'
 
 function AllRoutes() {
   return (
@@ -15,14 +17,15 @@ function AllRoutes() {
         
 
         <Routes>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='myDeals' element={<MyDeals/>}></Route>
+            <Route path='/' element={<PrivateRoute><Home/> </PrivateRoute>}></Route>
+            <Route path='myDeals' element={<PrivateRoute><MyDeals/></PrivateRoute>}></Route>
             <Route path='kindMoments' element={<KindMoments/>}></Route>
-            <Route path='recipes' element={<Recipes/>}></Route>
+            <Route path='recipes' element={<PrivateRoute><Recipes/></PrivateRoute>}></Route>
             <Route path='directory' element={<Directory/>}></Route>
             <Route path='articles' element={<Articles/>}></Route>
             <Route path='mobileApp' element={<MobileApp/>}></Route>
             <Route path='help' element={<Help/>}></Route>
+            <Route path='login' element={<Login/>}></Route>
         </Routes>
     </div>
   )

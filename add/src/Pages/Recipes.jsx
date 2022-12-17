@@ -81,9 +81,9 @@ function Recipes() {
 
   return (
     <div>
-      Recipes
+      
       {/* serch functionality */}
-      <div>
+      <div className={Style.searchBox}>
         <div className={Style.searchContainer}>
           <TextField
             id="outlined-basic"
@@ -126,12 +126,14 @@ function Recipes() {
           </Button>
         </div>
       </div>
+
+
       <div className={Style.CardParent}>
         {categoryArray &&
           categoryArray?.map((item) => {
             return (
-              <div>
-                <button onClick={() => handleCat(item)}>{item}</button>
+              <div style={{padding:"0.3rem"}}>
+                <Button style={{border:"1px solid #2bb673" ,color:"gray"}} onClick={() => handleCat(item)}>{item}</Button>
               </div>
             );
           })}
