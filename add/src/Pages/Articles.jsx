@@ -1,6 +1,7 @@
 // import { Pagination } from '@mui/material'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import ArticlesCard from './AriclesComponents/ArticlesCard'
 import Pagination from './AriclesComponents/Pagination'
 
 function Articles() {
@@ -26,6 +27,8 @@ function Articles() {
   useEffect(()=>{
     fetchArticles()
   },[page])
+
+  console.log(page)
   return (
     <div>
        <div style={{border:"1px solid red" ,padding:"1rem",textAlign:"left",backgroundColor:"#a7a3a345"}}>
@@ -38,12 +41,15 @@ function Articles() {
           </div>
        </div>
 
-       <div  style={{border:"1px solid blue" ,height:"10rem",textAlign:"left",backgroundColor:"#a7a3a345"}}>
+       <div  style={{border:"1px solid blue" ,textAlign:"left",backgroundColor:"#a7a3a345"}}>
 
         <div style={{border:"1px solid red" ,width:"80%",margin:"auto"}}>
 
-         <Pagination page={page} totalPage={totalPage} limit={limit} />
+         <Pagination page={page} totalPage={totalPage} limit={limit} setPage={setPage} />
 
+        </div>
+        <div>
+          <ArticlesCard articles={articles}/>
         </div>
 
        </div>
