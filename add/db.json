@@ -3989,5 +3989,167 @@
         }
       ]
     }
+  ],
+  "Articles":[
+    {
+      "id":1,
+      "backgroundImage":"https://www.kindmeal.my/photos/article/20/20341-l.jpg",
+      "title":"Salted Caramel Apple Crumble!",
+      "by":"by KindMeal.my",
+      "discription":"A healthy take on the classic Christmas dessert recipe.",
+      "date":"16 December 2022"
+    },
+    {
+      "id":2,
+      "backgroundImage":"https://www.kindmeal.my/photos/article/20/20335-l.jpg",
+      "title":"Wild Turkeys Go Nuts About Guy On Motorcycle!",
+      "by":"by KindMeal.my",
+      "discription":"Wild turkeys are so obsessed with guy that he has to wear a hoop skirt to fend them off! 😂",
+      "date":"15 December 2022"
+    },{
+      "id":3,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20345-l.jpg",
+      "title":"In October Of This Year, Animal Equality Joined A Campaign Led By The Open Wing ..",
+      "by":"by Animal Equality",
+      "discription":"In October of this year, Animal Equality joined a campaign led by the Open Wing Alliance to hold companies accountable for their commitments to ban cages for hens. We need your help to 💥 take action 💥 against one of the companies that remains silent about animal suffering—Millennium Hotels. Four c..",
+      "date":"16 December 2022"
+    },{
+      "id":4,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20343-l.jpg",
+      "title":"Vegan Athletes Are On The Rise. More And More Athletes Are Seeing The Value In A..",
+      "by":"by Compassion Over Killing",
+      "discription":"Vegan athletes are on the rise. More and more athletes are seeing the value in adopting a vegan diet and proving you don’t need animal products to compete at the highest level. Here is what Venus Williams said about why she went vegan. #inspiring",
+      "date":"16 December 2022"
+    },{
+      "id":5,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20342-l.jpg",
+      "title":"Do You Want To Build A Better Tomorrow For All Animals? All Donations Made Befor..",
+      "by":"by Compassion Over Killing",
+      "discription":"Do you want to build a better tomorrow for all animals? All donations made before midnight on December 31 will be matched dollar for dollar up to $100,000. PLUS, for a donation of $100 or more, you'll be entered to win one of five copies of HIDDEN: Animals in the Anthropocene by Jo-Anne McArthur a..",
+      "date":"16 December 2022"
+    },{
+      "id":6,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20338-l.jpg",
+      "title":"Animal Equality Joins The Brazil Senate Self-control Bill Debate",
+      "by":"by Animal Equality",
+      "discription":"Animal Equality is continuing its efforts to ❌ STOP ❌ Brazil's Self-Control Bill! On Monday, Animal Equality participated in a debate at Brazil's Senate to oppose the Self-Control Bill. If passed, government inspections of slaughterhouses would end, allowing the meat industry to regulate itself. Th..",
+      "date":"15 December 2022"
+    },
+    {
+      "id":7,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20337-l.jpg",
+      "title":"Take A Stand For Animals. Take Them Off Your Plate. Govegan. Image Anipixel We..",
+      "by":"by Compassion Over Killing",
+      "discription":"Take a stand for animals. Take them off your plate. #GoVegan🌱 Image: Anipixel / We Animals Media",
+      "date":""
+    },{
+      "id":8,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20336-l.jpg",
+      "title":"Our 2012 Undercover Video Exposed Rampant Animal Abuse And Suffering Inside Cent..",
+      "by":"by Compassion Over Killing",
+      "discription":"Our 2012 undercover video exposed rampant animal abuse and suffering inside Central Valley Meat Co., a California slaughterhouse. In response to our investigation and complaint, the USDA shut down the facility for a number of days and later took enforcement action. Also, In-N-Out Burger, McDonald’s ..",
+      "date":"15 December 2022"
+    },{
+      "id":9,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20334-l.jpg",
+      "title":"Did You Know That Cows, Like Dogs, Thrive In Social Environments Where They Can ..",
+      "by":"by Compassion Over Killing",
+      "discription":"Did you know that cows, like dogs, thrive in social environments where they can build relationships, play and exercise? Click here for more amazing facts about cows 🐮:",
+      "date":"14 December 2022"
+    },{
+      "id":10,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20333-l.jpg",
+      "title":"Sick Baby Cow Headbutts His Bffs All Day Now",
+      "by":"by KindMeal.my",
+      "discription":"Tiny calf who fit in a bathtub headbutts all his friends now ❤️🐮",
+      "date":"14 December 2022"
+    },{
+      "id":11,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20330-l.jpg",
+      "title":"The Best Air Fryer Recipe",
+      "by":"by KindMeal.my",
+      "discription":"Simple, healthy air fryer recipe for Salt & Pepper Tofu!",
+      "date":"13 December 2022"
+    },
+    {
+      "id":12,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20328-l.jpg",
+      "title":"Sea Turtle Stuck In Plastic Gets Help At Just The Right Time",
+      "by":"by KindMeal.my",
+      "discription":"Sea turtle caught in plastic waits patiently to be rescued by whale watchers 💙",
+      "date":"12 December 2022"
+    },{
+      "id":13,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20332-l.jpg",
+      "title":"The Science On Fish Sentience Is Clear Fish Have The Capacity To Suffer And Feel..",
+      "by":"by Compassion Over Killing",
+      "discription":"“The science on fish sentience is clear: fish have the capacity to suffer and feel pain.” - Becca Franks, fish scientist. In 2019, Animal Outlook released the first-ever undercover exposé of salmon aquaculture in the U.S. and documented senseless violence against these sentient animals at Cooke Aqu..",
+      "date":"13 December 2022"
+    },{
+      "id":14,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20331-l.jpg",
+      "title":"Do You Want To Build A Better Tomorrow For All Animals? All Donations Made Befor..",
+      "by":"by Compassion Over Killing",
+      "discription":"Do you want to build a better tomorrow for all animals? All donations made before midnight on December 31 will be matched dollar for dollar up to $100,000. PLUS, for a donation of $100 or more, you'll be entered to win one of five copies of HIDDEN: Animals in the Anthropocene by Jo-Anne McArthur a..",
+      "date":"13 December 2022"
+    },{
+      "id":15,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20329-l.jpg",
+      "title":"Lets Create A World Where All Animals Are Free. Govegan To Make That Possible. I..",
+      "by":"by Compassion Over Killing",
+      "discription":"Let’s create a world where all animals are free. #GoVegan to make that possible 💚. Image: Jo-Anne McArthur / We Animals Media",
+      "date":"12 December 2022"
+    },{
+      "id":16,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20327-l.jpg",
+      "title":"Today Is National Day Of Animal Rights. Animals Are Sentient Beings And Deserve ..",
+      "by":"by Compassion Over Killing",
+      "discription":"Today is National Day of Animal Rights. Animals are sentient beings and deserve the same rights every human does. We’re all in it together 🐖🐄🐥🐟🐢🐓🦃🐑",
+      "date":"11 December 2022"
+    },
+    {
+      "id":17,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20326-l.jpg",
+      "title":"Pigs Are Extremely Intelligent Animals, Even Smarter Than Dogs. They Have Great ..",
+      "by":"by Compassion Over Killing",
+      "discription":"Pigs are extremely intelligent animals, even smarter than dogs. They have great object location memory, which helps them search for food in nature. It's truly a great injustice that animals such as pigs are confined, tortured and slaughtered for food. Learn more about how smart pigs are: Credit: J..",
+      "date":"10 December 2022"
+    },{
+      "id":18,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20324-l.jpg",
+      "title":"Nestle''s Nightmare: The Hard-to-swallow Truth",
+      "by":"by Compassion Over Killing",
+      "discription":"Our 2019 investigation of Martin Farms, a Pennsylvania dairy facility, revealed appalling abuse toward animals. It's tragic that this is the reality of the animal agriculture system. Read more about the investigation here:",
+      "date":"10 December 2022"
+    },{
+      "id":19,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20323-l.jpg",
+      "title":"Cow Who Thinks She''s A Dog Follows Her New Dad Everywhere",
+      "by":"by KindMeal.my",
+      "discription":"Rescued cow follows human best friend everywhere — and even blocks the car so he doesn't leave 💕",
+      "date":"10 December 2022"
+    },{
+      "id":20,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20318-l.jpg",
+      "title":"Caesar Salad",
+      "by":"by KindMeal.my",
+      "discription":"Did you know that this salad isn't actually named after a Roman Emperor? Nope. Caesar salads get their name from one Caesar Cardini, an Italian chef who immigrated to the US after WWI.",
+      "date":"09 December 2022"
+    },{
+      "id":21,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20314-l.jpg",
+      "title":"Ladybug Wings",
+      "by":"by KindMeal.my",
+      "discription":"A ladybug's wings are flexible enough to fold intricately — yet strong enough to fly.",
+      "date":"08 December 2022"
+    },
+    {
+      "id":22,
+       "backgroundImage":"https://www.kindmeal.my/photos/article/20/20322-l.jpg",
+      "title":"Why Momentum Is Building For The Push To End Factory Farming. Read More",
+      "by":"by Compassion Over Killing",
+      "discription":"Today, animal activists stood alongside Animal Equality as we protested the ongoing killing of American horses for their meat. ✊🐴 Thank you to all who attended today & lent your voice to animals. You stood up for horses & the majority of US citizens, who oppose the transport and slaughter of Americ..",
+      "date":"09 December 2022"
+    }
   ]
 }

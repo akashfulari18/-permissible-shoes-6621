@@ -8,11 +8,15 @@ import {
   
 } from "@chakra-ui/react";
 
-import { Link as RouterLink } from "react-router-dom";
-import { useState } from "react";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { AuthContext } from "../Context/AuthContext";
 
 export default function Navbar() {
 
+  const {isAuth, handleLogOut} =useContext(AuthContext)
+  console.log(isAuth)
+  const navigate=useNavigate();
   return (
     <>
       <Box className="bod">
@@ -48,9 +52,13 @@ export default function Navbar() {
               </div>
             </div>
             <div className="headerEnd">
-              <div className="sp">
+              {!isAuth ? <div className="sp" onClick={()=>(navigate("/login"))}>
                 <p>Login</p>
               </div>
+              :
+              <div onClick={handleLogOut}>
+                <p>Logout</p>
+              </div>}
               <div className="sp">
                 <Button colorScheme={"blue"} className="Fb">
                   Facebook
