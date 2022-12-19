@@ -10,6 +10,7 @@ import MobileApp from '../Pages/MobileApp'
 import MyDeals from '../Pages/MyDeals'
 import Recipes from '../Pages/Recipes'
 import PrivateRoute from '../Pages/PrivateRoute'
+import SingleCard from '../Pages/AriclesComponents/singleCard'
 
 function AllRoutes() {
   return (
@@ -17,14 +18,15 @@ function AllRoutes() {
         
 
         <Routes>
-            <Route path='/' element={<PrivateRoute><Home/> </PrivateRoute>}></Route>
+            <Route path='/' element={<Home/>}></Route>
             <Route path='myDeals' element={<PrivateRoute><MyDeals/></PrivateRoute>}></Route>
-            <Route path='kindMoments' element={<KindMoments/>}></Route>
+            <Route path='kindMoments' element={<PrivateRoute><KindMoments/></PrivateRoute>}></Route>
             <Route path='recipes' element={<PrivateRoute><Recipes/></PrivateRoute>}></Route>
-            <Route path='directory' element={<Directory/>}></Route>
-            <Route path='articles' element={<Articles/>}></Route>
-            <Route path='mobileApp' element={<MobileApp/>}></Route>
-            <Route path='help' element={<Help/>}></Route>
+            <Route path='directory' element={<PrivateRoute><Directory/></PrivateRoute>}></Route>
+            <Route path='articles' element={<PrivateRoute><Articles/></PrivateRoute>}></Route>
+            <Route path='articles/:id' element={<PrivateRoute><SingleCard/></PrivateRoute>}></Route>
+            <Route path='mobileApp' element={<PrivateRoute><MobileApp/></PrivateRoute>}></Route>
+            <Route path='help' element={<PrivateRoute><Help/></PrivateRoute>}></Route>
             <Route path='login' element={<Login/>}></Route>
         </Routes>
     </div>

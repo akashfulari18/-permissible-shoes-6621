@@ -43,7 +43,7 @@ function Recipes() {
       category === "All Category" ? "" : `name=${category}`;
 
     axios
-      .get(`http://localhost:3004/Recipes?${resultCategory}`)
+      .get(`https://kindmeal-api.onrender.com/Recipes?${resultCategory}`)
       .then((res) => {
         let resData = [];
         res?.data?.map((item) => {
