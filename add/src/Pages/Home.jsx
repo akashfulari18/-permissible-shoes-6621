@@ -5,20 +5,56 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CardCol from "./HomeComponents/CardCol";
+import { Center, HStack, Image } from "@chakra-ui/react";
+
 function Home() {
+  let images = [
+    {
+      hotel: "https://www.kindmeal.my/photos/shop/5/592-4483-m.jpg",
+      dish: "https://www.kindmeal.my/photos/deal/7/700-4802-m.jpg",
+    },
+    {
+      hotel: "https://www.kindmeal.my/photos/shop/5/504-3481-m.jpg",
+      dish: "https://www.kindmeal.my/photos/deal/6/626-3611-m.jpg",
+    },
+    {
+      hotel:
+        "https://images.unsplash.com/photo-1584970091438-19edea48bdc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjMzfHxob3RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      dish: "https://www.kindmeal.my/photos/deal/4/469-1822-m.jpg",
+    },
+    {
+      hotel: "https://www.kindmeal.my/photos/shop/6/601-4497-m.jpg",
+      dish: "https://www.kindmeal.my/photos/deal/7/707-4819-m.jpg",
+    },
+    {
+      hotel:
+        "https://images.unsplash.com/photo-1506813257165-8c4bffd3a57f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjMyfHxob3RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      dish: "https://www.kindmeal.my/photos/deal/4/424-1404-m.jpg",
+    },
+    {
+      hotel: "https://www.kindmeal.my/photos/shop/5/598-4450-m.jpg",
+      dish: "https://www.kindmeal.my/photos/deal/7/704-4734-m.jpg",
+    },
+    {
+      hotel: "https://www.kindmeal.my/photos/shop/2/219-940-m.jpg",
+      dish: "https://www.kindmeal.my/photos/deal/6/681-4353-m.jpg",
+    },
+  ];
+
   const [latestNews, setLatesetNews] = useState([]);
   const [yummy, setYummy] = useState([]);
   const [discover, setDiscover] = useState([]);
+  const [Count, setCount] = React.useState(0);
   const [AmazingSup, setAmazingSup] = useState([]);
 
-  const [carData,setCarData] = useState([])
+  const [carData, setCarData] = useState([]);
   const fetchLatestNews = () => {
     axios
-      .get(`http://localhost:3004/Home_page`)
+      .get(`https://kindmeal-api.onrender.com/Home_page`)
       .then((res) => {
         setLatesetNews(res.data[0].latestNewsAndVideo);
 
-        setCarData(res.data[0].slidingImg);
+        setCarData(res?.data[0].slidingImg);
         setYummy(res.data[0].Yummylicious_Moments);
 
         setDiscover(res.data[0].Discover_Restaurants);
@@ -27,24 +63,62 @@ function Home() {
       .catch((err) => console.log(err));
   };
 
-  console.log(carData)
+  // console.log(carData[0].image)
   useEffect(() => {
     fetchLatestNews();
   }, []);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (Count === carData.length - 1) {
+        setCount(0);
+      } else {
+        setCount((Count) => Count + 1);
+      }
+    }, 3000);
+    const cleanup = () => {
+      clearInterval(intervalId);
+    };
+    return cleanup;
+  }, [Count]);
   // fetchLatestNews()
+  // console.log(Count);
   return (
     <div>
-      Home
-
+    
       {/* carousel start here */}
-      <div>Carousel
-
-
-
+      <div className={Style.carousel}>
+        <div className={Style.innerCarousel}>
+          <Center>
+            <Center className={Style.Carousel}>
+              <Image w="70%" h="370px"  src={carData[Count]?.image} />
+              <Image w="30%" h="370px" src={carData[Count]?.sideLogo} />
+            </Center>
+          </Center>
+          <Center>
+            <HStack
+              className={Style.images}
+              display="flex"
+              justify="space-between"
+              w="100%"
+              shadow="md"
+              p="25px"
+              // mb="50px"
+            >
+              {carData.map((el, i) => (
+                <Image
+                  className={Style.image}
+                  // w="120px"
+                  // h="80px"
+                  src={el.image}
+                  onClick={() => setCount(i)}
+                />
+              ))}
+            </HStack>
+          </Center>
+        </div>
       </div>
-
-{/* carousel end here */}
-
+      {/* carousel end here */}
       <div className={Style.allCont}>
         <div>
           <div className={Style.cardCol}>
@@ -171,7 +245,7 @@ function Home() {
           Instant coupon & dining. No upfront coupon payment, booking or
           printing.
         </div>
-        <div style={{width:"100%"}}>
+        <div style={{ width: "100%" }}>
           <div className={Style.fourCards}>
             <div className={Style.cardItem}>
               <div>
@@ -244,20 +318,22 @@ function Home() {
           </p>
         </div>
         <div>
-          <button className={Style.joinBtn}>Join HappyMeal Now
-          <br/>
-          <span>Your Tastey journey begins here</span></button>
+          <button className={Style.joinBtn}>
+            Join HappyMeal Now
+            <br />
+            <span>Your Tastey journey begins here</span>
+          </button>
         </div>
         <div className={Style.featuredOn}>
-
           <p>Featured ON</p>
           <img src="https://www.kindmeal.my/images/media-feature2.png" alt="" />
-
         </div>
       </div>
-
       <div className={Style.lsImg}>
-        <img src="	https://www.kindmeal.my/images/banner_whykindmeal.png" alt="" />
+        <img
+          src="	https://www.kindmeal.my/images/banner_whykindmeal.png"
+          alt=""
+        />
       </div>
     </div>
   );

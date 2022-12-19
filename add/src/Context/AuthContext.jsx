@@ -27,7 +27,7 @@ const navigate = useNavigate();
        setContextData({
            ...contextData,token:null,isAuth:false
         })
-        navigate("/login");
+        navigate("/");
    }
 //    console.log(token)
 // const {token ,isAuth} =contextData
